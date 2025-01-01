@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altschool Africa</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="path/to/your/logo.png" alt="Altschool Logo" width="100" height="auto">
+        <nav aria-labelledby="primary-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/table.html">Course Table</a></li>
+                <li><a href="http://127.0.0.1:5500/form.html">Application Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Media Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#audio">Audio</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#picture">Picture</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Altschool Africa Media</h1>
+        
+    
+        <article id="mission">
+            <h2> Mission</h2>
+            <p>At Altschool Africa, my mission is to harness technology to solve real-world problems and empower communities. Driven by a passion for innovation, I aim to build impactful solutions that improve lives. The opportunity to learn and grow here fuels my desire to contribute to Africa's tech transformation. I’m excited to leverage these skills to create meaningful change and push the boundaries of what’s possible.</p>
+        </article>
+        <section>
+            <picture>
+                <source srcset="./assets/image/Yande Portrait 1.jpg" media="(max-width: 600px)">
+                <source srcset="./assets/image/Full Stack Developer.jpg" media="(min-width: 601px) and (max-width: 800px)">
+                <source srcset="./assets/image/Premium Vector _ Portrait of programmer working with pc.jpg" media="(max-width: 1020px)">
+                <img src="./assets/image/Yande Portrait 1.jpg" alt="Default fallback image">
+            </picture>
+        </section>
+        
+        <section>
+            <h2>Hear from other Altschoolers!</h2>
+            <iframe 
+            src="https://www.youtube.com/embed/4r64jGYO8vQ?si=h9qMmGhPZxLBIWM9" width="100%" height="375px" style="max-width: 100%;border: none">
+            </iframe>
+        </section> 
+        <section>
+            <h2>Visit Altschool online store</h2>
+            <video src="./assets/video/altschool merch store.mp4" controls>my video</video>
+        </section>
+        
+        
+        <article id="audio">
+            <h2>Creativity and motivation.</h2>
+            <p>Music has long been celebrated as a source of inspiration, fueling creativity and providing the motivation needed to conquer tasks. Whether it’s the soft hum of an instrumental piece or the infectious rhythm of an upbeat track, music has the power to transform moods, sharpen focus, and spark new ideas. It drowns out distractions, enhances concentration, and provides the perfect backdrop for any creative or productive activity.As you explore the media section, here are two songs carefully chosen to highlight this theme—each offering its unique energy and emotion to fuel your creativity and motivation. Let the sounds inspire, uplift, and accompany you on your journey of productivity and discovery.</p>
+        </article>
+        <section id="audio">
+            <audio controls>
+                <source src="./assets/audio/juno beat.mp3">
+            </audio>
+            <audio controls>
+                <source src="./assets/audio/shouse Tonight.mp3">
+            </audio>
+        </section>
+
+    </main>
+    <aside>
+        <section id="video">
+            <h2>Trivia Video</h2>
+            <video controls width="100%" height="auto">
+                <source src="./assets/video/elephant having fun.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section>
+            <fieldset>
+                <p>You've been given an elephant. You can't give it away or sell it. What would you do with the elephant?</p>
+                <form id="form">
+                <label for="name"></label>
+                <br>
+                <input type="text" id="name" name="name" placeholder="fill your name"> 
+                <br>
+                <input type="email" id="email" name="email" placeholder="fill your email"required>
+                <br>
+                <input type="text" id="answer" name="answer" placeholder="Trivia Answer" required>
+                <br>
+                <button type="submit">Submit</button>
+                <br>
+                <img src="./assets/gif/animals-elephant.gif" alt="elephant gif" class="small gif">
+                </form>
+            </fieldset>
+        </section>
+    </aside>
+
+    <footer>
+        <p>&copy; 2024 Courage Odemwingie Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>
