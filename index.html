@@ -5,21 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AltschooAfrica</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
     <header class="head-box">
+        <div class="logo">
+            <img src="./assets/image/AltSchool_Africa.png"></div>
         <nav class="nav-buttons">
             <a href="http://127.0.0.1:5500/index.html" class="nav-btn">home</a>
-            <a href="http://127.0.0.1:5500/form.html" class="nav-btn">portal form</a>
+            <a href="http://127.0.0.1:5500/form.html" class="nav-btn">Application portal</a>
             <a href="http://127.0.0.1:5500/table.html" class="nav-btn">course Table</a>
             <a href="http://127.0.0.1:5500/media.html" class="nav-btn">fun-corner</a>
         </nav>
         <h1>Altschool Profile</h1>
     </header>
+    <hr>
     <main>
-        <section>
+        <section id="body-container">
             <div class="bio-data">
-                <div class="header-container"><h2>Bio-Data</h2></div>
+                <div class="header-container">
+                    <p class="line-header">Bio-Data</p>
+                </div>
+                <img src="./assets/image/Yande Portrait 1.jpg" alt="myphoto" style="max-width:50%">
                 <ul>
                     <li><strong>Name:</strong> Courage Odemwingie</li>
                     <li><strong>Altschool ID:</strong> ALT/SOE/024/4978</li>
@@ -28,10 +36,9 @@
                     <li><strong>Learning Track:</strong> Frontend Engineering</li>
                 </ul>
             </div>
-            <hr>
             <div class="about-me">
                 <div class="header-container">
-                    <h2>About Me</h2>
+                    <p class="line-header">About Me</p>
                 </div>
                 <p>
                     Hi, I’m Courage aka MrYande, I’m excited to be part of the Altschool Africa School of Engineering
@@ -39,57 +46,46 @@
                     I have a deep passion for technology and problem-solving, and I see this as the perfect opportunity
                     to refine my skills and make a meaningful difference. I bring a results-driven mindset and a diverse
                     background in business management, sales, design, and professional writing. My goal is to use my
-                    expertise to foster growth and contribute significantly to the success of any organization I work with.
+                    expertise to foster growth and contribute significantly to the success of any organization I work
+                    with.
+                </p>
+                <img src="./assets/image/Full Stack Developer.jpg" alt="dev-image" style="width: 100%;">
+            </div>
+        </section>
+        <section id="second-container">
+            <div class="why-altschool">
+                <div class="header-container">
+                    <p class="line-header">Why I Joined Altschool Africa</p>
+                </div>
+                <p>
+                    I joined the program to gain practical experience, strengthen my understanding of computer
+                    engineering concepts, and connect with others who share similar interests and goals.
                 </p>
             </div>
-            <div class="about-me">
-            <div class="header-container">
-                <h2>About Me</h2>
+            <div class="goals">
+                <div class="header-container">
+                    <p class="line-header">My Goals as an Altschooler</p>
+                </div>
+                <p>
+                    My goal is to become a top full-stack developer by mastering both
+                    front-end and back-end tracks. I aim to collaborate on innovative projects that make a real impact
+                    and work alongside brilliant developers to push the boundaries of what's possible for myself and the
+                    world. I aspire to be among the best in the field and grow into a leadership role where I can
+                    inspire and guide others in the tech industry.
+                </p>
             </div>
-            <p>
-                Hi, I’m Courage aka MrYande, I’m excited to be part of the Altschool Africa School of Engineering
-                program.
-                I have a deep passion for technology and problem-solving, and I see this as the perfect opportunity
-                to refine my skills and make a meaningful difference. I bring a results-driven mindset and a diverse
-                background in business management, sales, design, and professional writing. My goal is to use my
-                expertise to foster growth and contribute significantly to the success of any organization I work with.
-            </p>
-        </div>
-        <hr>
-        <div class="why-altschool">
-            <div class="header-container"><h2>Why I Joined Altschool Africa</h2></div>
-            <p>
-                I joined the program to gain practical experience, strengthen my understanding of computer
-                engineering concepts, and connect with others who share similar interests and goals.
-            </p>
-        </div>
-        <hr>
-        <div class="goals">
-            <div class="header-container">
-                <h2>My Goals as an Altschooler</h2>
-            </div>
-            <p>
-                My goal is to become a top full-stack developer by mastering both
-                front-end and back-end tracks. I aim to collaborate on innovative projects that make a real impact
-                and work alongside brilliant developers to push the boundaries of what's possible for myself and the
-                world. I aspire to be among the best in the field and grow into a leadership role where I can
-                inspire and guide others in the tech industry.
-            </p>
-        </div>
+        </section>
         <div class="learning-track">
-            <div class="header-container">
-                <h2>Learning Track</h2>
+            <div class="track-container"><h3>Learning Track available at Altschool</h3></div>
+            <div class="learning-track-items">
+                <a href="https://karatu.oluwasetemi.dev/1" class="learning-item html">HTML</a>
+                <a href="https://css-note.oluwasetemi.dev/1" class="learning-item css">CSS</a>
+                <a href="https://www.w3schools.com/js/" class="learning-item javascript">JavaScript</a>
+                <a href="https://legacy.reactjs.org/tutorial/tutorial.html" class="learning-item reactjs">ReactJS</a>
+                <a href="https://nodejs.org/en" class="learning-item nodejs">NodeJS</a>
             </div>
-            <ul>
-                <li class="element">HTML</li>
-                <li class="element1">CSS</li>
-                <li class="element">JavaScript</li>
-                <li class="element1">ReactJS</li>
-                <li class="element">NodeJS</li>
-            </ul>
         </div>
     </main>
-    <hr>
     <footer id="footer-container">
         <h6>Head office</h6>
         <p class="footer-text">360) 793-0508
@@ -103,4 +99,5 @@
         <p class="copy">&copy;2024 courage odemwingie &trade;. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
