@@ -8,128 +8,118 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+
     <body>
-        <header class="head-box">
+        <header>
             <div class="logo">
-                <img src="./assets/image/AltSchool_Africa.png"></div>
+                <img src="./assets/image/AltSchool_Africa.png">
+            </div>
             <nav class="nav-buttons">
                 <a href="http://127.0.0.1:5500/index.html" class="nav-btn">home</a>
                 <a href="http://127.0.0.1:5500/form.html" class="nav-btn">Application portal</a>
                 <a href="http://127.0.0.1:5500/table.html" class="nav-btn">course Table</a>
                 <a href="http://127.0.0.1:5500/media.html" class="nav-btn">fun-corner</a>
             </nav>
-        <h1>Application Portal</h1>
-    </header>
-    <main>
-        <h3><em>Take the next steps to apply at AltSchool Africa</em>, sign up!</h3>
-        <section id="form-container">
-            <div class="form-item">
-                <fieldset style="border: 2px solid black; padding: 10px;">
-                    <legend>Create account</legend>
-                    <form action="#" method="post">
-                        <label for="firstname">First Name</label>
-                        <br>
-                        <input type="text" id="firstname" name="firstname" aria-label="enter first name"
-                            placeholder="enter first name" autocomplete="enter first name" required autofocus>
-                        <br><br>
-                        <label for="Lastname">Last Name</label>
-                        <br>
-                        <input type="text" id="Lastname" name="Lastname" aria-label="enter last name"
-                            placeholder="enter last name" required>
-                        <br><br>
-                        <label for="email">Email Address</label>
-                        <br>
-                        <input type="email" id="Email" name="Email Address" aria-label="enter email"
-                            placeholder="enter email address" required>
-                        <br><br>
-                        <label for="tel">Phone Number</label>
-                        <br>
-                        <input type="tel" id="phone" name="phone number" aria-label="enter phone number"
-                            placeholder="08123458000" required pattern="[0-9]{4}[0-9]{3}[0-9]{4}">
-                        <br><br>
-                        <label for="">Gender</label>
-                        <br>
-                        <select id="gender" name="gender">
-                            <option value="">Select your gender</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="rather not say">Rather not say</option>
-                        </select>
-                        <br><br>
-                        <label for="dob">Date of Birth</label>
-                        <br>
-                        <input type="date" id="dob" name="Date of birth" placeholder="enter your date of birth"
-                            required>
-                        <br><br>
-                        <label for="country">Country</label>
-                        <br>
-                        <select id="country" name="Country">
-                            <option value="">Select your country</option>
-                            <option value="georgia">Georgia</option>
-                            <option value="Ghana">Ghana</option>
-                            <option value="Nigeria">Nigeria</option>
-                            <option value="united kingdom">United Kingdom</option>
-                            <option value="Oman">Oman</option>
-                            <option value="Panama">Panama</option>
-                            <option value="Qatar">Qatar</option>
-                            <option value="Rwanda">Rwanda</option>
-                            <option value="South Africa">South Africa</option>
-                            <option value="Thailand">Thailand</option>
-                            <option value="Uganda">Uganda</option>
-                            <option value="Venezuela">Venezuela</option>
-                            <option value="Wales">Wales</option>
-                            <option value="Yemen">Yemen</option>
-                            <option value="Zambia">Zambia</option>
-                        </select>
-                        <br><br>
-                        <label for="state">State/City of Residence</label>
-                        <br>
-                        <input id="state" name="state" placeholder="Enter your state of Residence" required>
-                        <br><br>
-                        <label for="">How did you hear about us</label>
-                        <br>
-                        <select id="channel" name="Channel">
-                            <option value="">Select channel</option>
-                            <option value="facbook">Facebook</option>
-                            <option value="Twitter">Twitter</option>
-                            <option value="Instagram">Instagram</option>
-                            <option value="linkedin">LinkedIn</option>
-                        </select>
-                        <br><br>
-                        <label for="password">Password</label>
-                        <br>
-                        <input type="password" id="password" name="password" placeholder="enter your password" required>
-                        <br><br>
-                        <label for="password">Confirm Password</label>
-                        <br>
-                        <input type="password" id="password-confirm" name="password-confirm"
-                            placeholder="confirm your password" required>
-                        <br><br>
-                        <p>By clicking continue, I agree to the <span id="terms">terms of use</span> and acknowledge
-                            that I have read
-                            the privacy policy.</p>
-                        <button>Continue</button>
-                        <br>
-                    </form>
-                </fieldset>
+            <h1>Application Portal</h1>
+        </header>
+        <main>
+            <div>
+                <h3><em>Take the next steps to apply at AltSchool Africa</em>, <span id="highlight">sign up!</span></h3>
             </div>
-        </section>
-    </main>
-    <side>
-        <br>
-        <h2>Learn highly sought after skills without hassle.</h2>
-    </side>
-</body>
-<footer id="footer-container">
-    <h6>Head office</h6>
-    <p class="footer-text">360) 793-0508
-        11610 Woods Lake Rd
-        Monroe, Washington(WA), 98272</p>
-    <h6>Abuja office</h6>
-    <p class="footer-text"> (580) 229-0886
-        1405 76th Hwy S
-        Healdton, Oklahoma(OK), 73438 </p>
-    <p><a href="#top">Back to top</a></p>
-    <p class="copy">&copy;2024 courage odemwingie &trade;. All rights reserved.</p>
-</footer>
+            <section id="form-container">
+                <div class="form-item">
+                    <fieldset style="border: 2px solid rgb(0, 0, 0,0.1); padding: 10px;">
+                        <legend>Create account</legend>
+                        <form action="#" method="post">
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" name="firstname" aria-label="enter your first name"
+                                placeholder="Enter first name" autocomplete="enter first name" required autofocus>
+                            <br><br>
+                            <label for="Lastname">Last Name</label>
+                            <input type="text" id="Lastname" name="Lastname" aria-label="enter  your last name"
+                                placeholder="Enter last name" required>
+                            <br><br>
+                            <label for="email">Email Address</label>
+                            <input type="email" id="Email" name="Email Address" aria-label="enter your email"
+                                placeholder="Enter email address" required>
+                            <br><br>
+                            <label for="tel">Phone Number</label>
+                            <input type="tel" id="phone" name="phone number" aria-label="enter your phone number"
+                                placeholder="08123458000" required pattern="[0-9]{4}[0-9]{3}[0-9]{4}">
+                            <br><br>
+                            <label for="">Gender</label>
+                            <select id="gender" name="gender">
+                                <option value="">Select your gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="rather not say">Rather not say</option>
+                            </select>
+                            <br><br>
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="Date of birth" placeholder="enter your date of birth"
+                                required>
+                            <br><br>
+                            <label for="country">Country</label>
+                            <select id="country" name="Country">
+                                <option value="">Select your country</option>
+                                <option value="georgia">Georgia</option>
+                                <option value="Ghana">Ghana</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="united kingdom">United Kingdom</option>
+                                <option value="Oman">Oman</option>
+                                <option value="Panama">Panama</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Rwanda">Rwanda</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Wales">Wales</option>
+                                <option value="Yemen">Yemen</option>
+                                <option value="Zambia">Zambia</option>
+                            </select>
+                            <br><br>
+                            <label for="state">State/City of Residence</label>
+
+                            <input id="state" name="state" placeholder="Enter your state of Residence" required>
+                            <br><br>
+                            <label for="">How did you hear about us</label>
+                            <select id="channel" name="Channel">
+                                <option value="">Select channel</option>
+                                <option value="facbook">Facebook</option>
+                                <option value="Twitter">Twitter</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="linkedin">LinkedIn</option>
+                            </select>
+                            <br><br>
+                            <label for="password">Password</label>
+
+                            <input type="password" id="password" name="password" placeholder="enter your password"
+                                required>
+                            <br><br>
+                            <label for="password">Confirm Password</label>
+
+                            <input type="password" id="password-confirm" name="password-confirm"
+                                placeholder="confirm your password" required>
+                            <br><br>
+                            <p class="form-click">By clicking continue, I agree to the <span id="terms">terms of
+                                    use</span> and acknowledge
+                                that I have read
+                                the privacy policy.</p>
+                            <br>
+                            <button>Continue</button>
+                        </form>
+                    </fieldset>
+                </div>
+            </section>
+        </main>
+        <side>
+            <br>
+            <h2>Learn highly sought after skills without hassle.</h2>
+        </side>
+    </body>
+    <footer id="footer-container">
+        <p><a href="#top">Back to top</a></p>
+        <p class="copy">&copy;2024 courage odemwingie &trade;. All rights reserved.</p>
+    </footer>
 </html>

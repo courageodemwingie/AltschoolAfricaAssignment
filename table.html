@@ -5,107 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Altschool Course Table</title>
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body>
-    <header id="header">
-        <br>
+    <header class="head-box">
+        <div class="logo">
+            <img src="./assets/image/AltSchool_Africa.png">
+        </div>
         <nav class="nav-buttons">
-            <a href="http://127.0.0.1:5500/index.html" class="nav-btn">Home</a>
-            <a href="http://127.0.0.1:5500/form.html" class="nav-btn">Application Form</a>
-            <a href="http://127.0.0.1:5500/table.html" class="nav-btn">Course Table</a>
-            <a href="http://127.0.0.1:5500/media.html" class="nav-btn">fun corner</a>
+            <a href="http://127.0.0.1:5500/index.html" class="nav-btn">home</a>
+            <a href="http://127.0.0.1:5500/form.html" class="nav-btn">Application portal</a>
+            <a href="http://127.0.0.1:5500/table.html" class="nav-btn">course Table</a>
+            <a href="http://127.0.0.1:5500/media.html" class="nav-btn">fun-corner</a>
         </nav>
-        <h1>Choose your preferred track!</h1>
+        <h1>Course Outline</h1>
     </header>
     <main>
-        <section>
-            <table id="table-container" border="3" width="850px">
+        <div class="table-box">
+            <table class="table-container">
                 <thead>
-                    <tr>
-                        <th align="center">Schools</th>
-                        <th colspan="4">Course</th>
+                    <tr class="table-headers">
+                        <th>Schools</th>
+                        <th colspan="4">Course of Study</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th align="left">School of Engineering</th>
-                        <td>Frontend engineering</td>
-                        <td>Backend engineering</td>
-                        <td>Cloud engineering</td>
-                        <td>Cybersecurity</td>
-                    </tr>
-                    <br><br>
-                    <tr>
-                        <th align="left">School of Product</th>
-                        <td>Product Marketing</td>
-                        <td>Product Design</td>
-                        <td colspan="2">Product management</td>
-                    </tr>
-                    <br><br>
-                    <tr>
-                        <th align="left">School of Data</th>
+                    <tr class="grey-row">
+                        <th class="row-head">School of Data</th>
                         <td>Data Science</td>
                         <td>Data Analysis</td>
-                        <td colspan="2">Data engineering</td>
+                        <td colspan="2">Data Engineering</td>
+                    </tr>
+                    <tr class="white-row">
+                        <th class="row-head">School of Product</th>
+                        <td>Product Marketing</td>
+                        <td>Product Design</td>
+                        <td colspan="2">Product Management</td>
+                    </tr>
+                    <tr class="grey-row">
+                        <th class="row-head">School of Engineering</th>
+                        <td>Frontend Engineering</td>
+                        <td>Backend Engineering</td>
+                        <td>Cloud Engineering</td>
+                        <td>Cybersecurity</td>
                     </tr>
                 </tbody>
-                </thead>
             </table>
+        </div>
+        <section id="top-container">
+            <div class="box-container">
+                <div class="head-container">
+                    <h1>School of Data (SOD)</h1>
+                </div>
+                <h4>
+                    Designed for students who enjoy working with numbers and patterns, this school focuses on analyzing
+                    data to uncover actionable insights and building data-driven solutions.
+                </h4>
+                <p><strong>Data Analysis:</strong> Learn techniques to clean, visualize, and interpret data using tools
+                    like Python, Power BI, and SQL.</p>
+                <p><strong>Data Science:</strong> Explore advanced statistical and machine learning techniques to solve
+                    complex real-world problems.</p>
+                <p><strong>Data Engineering:</strong> Build and maintain data infrastructures and pipelines to manage
+                    large-scale data processing.</p>
+            </div>
         </section>
-        <br>
-        <hr>
-        <section>
-            <div>
-                <h1> School of Engineering (SOE)</h1>
-                <h4> SOE is dedicated to helping you develop the technical expertise required to design, build, and
+        <section id="product-container">
+            <div class="box-container">
+                <div class="head-container">
+                    <h1>School of Product</h1>
+                </div>
+                <h4>
+                    At SOP, students are equipped with the skills of creating and managing digital products that are
+                    user-centric and business-aligned. Students gain skills in product strategy, user experience, and
+                    team leadership.
+                </h4>
+                <p><strong>Product Design:</strong> Develop user-friendly and aesthetic designs using tools like
+                    Figma, Sketch, and Adobe XD.</p>
+                <p><strong>Product Marketing:</strong> Learn strategies for promoting and positioning products
+                    effectively in competitive markets.</p>
+                <p><strong>Product Management:</strong> Gain knowledge in project and product management to oversee
+                    teams and deliver successful digital solutions.</p>
+            </div>
+        </section>
+        <section id="engineering-container">
+            <div class="SOD-container">
+                <div class="head-container">
+                    <h1>School of Engineering (SOE)</h1>
+                </div>
+                <h4>
+                    SOE is dedicated to helping you develop the technical expertise required to design, build, and
                     secure
                     digital systems. We prepare students for a wide range of roles in software development, system
-                    architecture, and security.</h4>
+                    architecture, and security.
+                </h4>
                 <p><strong>Frontend Engineering:</strong> Learn to create user interfaces using HTML, CSS, and
-                    JavaScript to
-                    ensure visually appealing and user-friendly applications.</p>
+                    JavaScript to ensure visually appealing and user-friendly applications.</p>
                 <p><strong>Backend Engineering:</strong> Master the development of server-side logic, databases, and
-                    APIs
-                    that power web and mobile applications.</p>
-                <p><strong>Cloud Engineering:</strong> A deep-dive into cloud computing platforms like AWS, Azure, and
-                    Google Cloud to build scalable, secure, and efficient systems.</p>
+                    APIs that power web and mobile applications.</p>
+                <p><strong>Cloud Engineering:</strong> A deep-dive into cloud computing platforms like AWS, Azure,
+                    and Google Cloud to build scalable, secure, and efficient systems.</p>
                 <p><strong>Cybersecurity:</strong> Master the art of protecting digital systems, networks, and sensitive
                     data from cyber threats. Learn techniques in ethical hacking, encryption, and threat analysis to
                     secure
                     applications and infrastructures.</p>
-            </div>
-            <br>
-            <hr>
-            <div>
-                <h1>School of Product (SOP)</h1>
-                <h4> At SOP, student are equipped with the skills of creating and managing digital products that are
-                    user-centric and business-aligned. Students gain skills in product strategy, user experience, and
-                    team
-                    leadership.</h4>
-                <p><strong>Product Design: </strong>Develop user-friendly and aesthetic designs using tools like Figma,
-                    Sketch, and Adobe XD.</p>
-                <p><strong>Product Marketing: </strong>Learn strategies for promoting and positioning products
-                    effectively
-                    in competitive markets.</p>
-                <p><strong>Product Management: </strong>Gain knowledge in project and product management to oversee
-                    teams
-                    and deliver successful digital solutions.</p>
-            </div>
-            <br>
-            <hr>
-            <div>
-                <h1>School of Data (SOD)</h1>
-                <h4> Designed for students who enjoy working with numbers and patterns, this school focuses on analyzing
-                    data to uncover actionable insights and building data-driven solutions.</h4>
-                <p><strong>Data Analysis: </strong>Learn techniques to clean, visualize, and interpret data using tools
-                    like
-                    Python, Power BI, and SQL.</p>
-                <p><strong>Data Science:</strong> Explore advanced statistical and machine learning techniques to solve
-                    complex real-world problems</p>
-                <p><strong>Data Engineering:</strong> Build and maintain data infrastructures and pipelines to manage
-                    large-scale data processing.</p>
             </div>
         </section>
     </main>
@@ -113,16 +117,8 @@
         <p>Choose your preferred track of learning!</p>
     </aside>
     <footer id="footer-container">
-        <h6>Head office</h6>
-        <p class="footer-text">360) 793-0508
-            11610 Woods Lake Rd
-            Monroe, Washington(WA), 98272</p>
-        <h6>Abuja office</h6>
-        <p class="footer-text"> (580) 229-0886
-            1405 76th Hwy S
-            Healdton, Oklahoma(OK), 73438 </p>
-        <p><a href="#top">Back to top</a></p>
         <p class="copy">&copy;2024 courage odemwingie &trade;. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
