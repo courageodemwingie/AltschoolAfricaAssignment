@@ -1,46 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.5rem;
-    font-size: 1rem;
 }
-header {
-    border-bottom:1px solid #333;
-}
+
 * {
     margin:0;
     padding: 0;
     box-sizing: border-box;
+}
+h1 {
+    margin-top: 20px;
+    font-size: 3rem;
+    color: rgb(238, 234, 234);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+
 }
 p {
     color: black;
     font-size: 1.1rem;
 }
 
-.line-header {
-    color: grey;
-    font-size: 2rem;
-    margin: 1rem;
-}
 /*---Header section---*/
-.head-box {
+header {
     display:grid;
     flex-wrap: wrap;
     grid-template-rows: auto 1fr auto;
-    align-items: center;
     padding: 10px 20px;
-    background-color: azure;
-    border-radius: 2px solid black;
+    background-color: rgb(70, 71, 146);
+    border-bottom:1px solid rgb(51, 51, 51,0.3);
+}
  
-}
-.logo {
-    font-size: 24px;
-    font-weight: 100;
-
-}
 .logo img {
+    padding: 0;
+    margin:0;
     width: 10%;
     border-radius: 500px 0px 500px 0;
     height: auto;
+    align-items: flex-start;
 }
 .head-box h1 {
     font-size: 60px;
@@ -55,11 +52,12 @@ p {
     display: flex;
     grid-template-columns: auto;
     justify-content: right;
-    gap: 20px;
+    gap: 5px;
 }
 .nav-btn {
     text-decoration: none;
-    color: black;
+    background-color: #ebe8e1;
+    color: rgb(69, 69, 73);
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 1.1rem;
@@ -68,248 +66,276 @@ p {
     transition: background-color 0.3 ease;
 }
 .nav-btn:hover {
-    background-color: #04360f;
+    background-color: #121412;
     color: white;
     border-color: black;
 }
 /**--BIO-DATA SECTION---*/
 #body-container {
-    display:flex;
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.track-container {
-    margin:10px;
-    padding: 1.1rem;
-}
-.line-header {
-    font-size: 2.5rem;
-    font-weight: 1000;
-    color: rgb(78, 48, 48);
-    padding-bottom: 0.5rem;
-    padding: 0;
-
-}
-.bio-data {
-    flex: 2;
-    min-width: 250px;
-    border: 2px solid grey;
-    padding: 1rem;
-    border-radius: 8px;
-}
-.about-me {
-    flex: 1;
-    min-width: 300px;
-    border: 2px solid grey;
-    padding: 1rem;
-    border-radius: 8px;
-    line-height: 3rem;
-
-}
-.about-me p {
-    font-size: 20px;
-}
-
-.bio-data ul {
-    flex-wrap: wrap;
-    gap: 4rem;
-    list-style: none;
-    padding: 0%;
-    margin: 1rem 0;
-    
-}
-.bio-data li {
-    font-size: 1.5rem;
-    line-height: 3.5rem;
-    display:list-item;
-    min-width: 150px;
-}
-/*--Secnd-container--*/
-#second-container {
+    padding: 10px;
     display: flex;
-    gap: 2rem;
-    margin: 2rem 0;
-
-}
-.why-altschool {
-    flex: 1;
     flex-wrap: wrap;
-    min-width: 250px;
-    border: 2px solid grey;
-    padding: 1rem;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bio-data, .about-me, .why-altschool, .goals {
+    flex: 1 1 calc(50% - 20px);
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #fff;
     border-radius: 8px;
 }
-.goals {
-    flex: 1;
-    min-width: 250px;
-    border: 2px solid grey;
-    padding: 1rem;
-    border-radius: 8px;
+
+.bio-data img, .about-me img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 5px;
+    padding: 0;
 }
-@media screen and (max-width: 768px) {
-    #second-container {
+
+.header-container {
+    margin-bottom: 10px;
+}
+
+.line-header {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+#second-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.learning-track {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+.learning-track-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.learning-item {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.learning-item:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    #body-container, #second-container {
         flex-direction: column;
-        gap: 1.5rem; }
-    }
-    /*--learning track section----*/
-    .learning-track {
-        margin: 2rem 0;
-        padding: 2rem;
-        background-color: rgb(161, 136, 144);
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0,0,0.1);
-
     }
 
-    .learning-track .line-header {
-        font-size: 3.5rem;
-        font-weight: bold;
-        color: #333;
-        margin: 5rem;
-
+    .bio-data, .about-me, .why-altschool, .goals {
+        flex: 1 1 100%;
     }
-    .learning-track-items {
-        display:flex;
-        flex-wrap:wrap;
-        gap:1.5rem;
+
+    .learning-item {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
         justify-content: center;
     }
+
+    .nav-btn {
+        flex: 1 1 calc(50% - 10px);
+        text-align: center;
+    }
+
     .learning-item {
-        text-align: center; /* Centers the text inside each item */
-        padding: 1rem;
-        width: 150px; /* Width of each clickable item */
-        background-color: #ffffff; 
-        border: 2px solid #ddd; 
-        border-radius: 100px; 
-        color: #333; 
-        font-weight: bold; 
-        text-decoration: none;
-        transition: background-color 0.3s, transform 0.3s;
+        flex: 1 1 100%;
     }
-   
-    .learning-item:hover {
-        background-color: #333;
-        color: #ddd;
-    }
-/**--footer--**/
-#footer-container {
-    background-color:rgb(20, 20, 20);
-    color: white;
+}
+/**--- FORM SECTION---*/
+
+h2 {
+    margin: 10px;
+}
+h3, p, ul, a, input, select, button {
     margin: 0;
-    padding:1.2rem 0;
-    text-align: left;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #696767;
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
 }
 
-.footer-text {
-    color: #ddd;
-    padding: 0.5rem;
-}
-.copy {
-    color:#ddd
-}
-/*--FORM --*/
-#form-container {
-    display: flex
-}
-.form-item{
-    margin:2rem ;
-    padding: 5rem;
-    
-}
-
-fieldset {
-    border: 2px solid rgba(0,0,0,0.2);
-    border-radius: 8px;
-    padding: 15px;
-    background: #ffffff;
-
-}
 legend {
+
     font-size: 2rem;
-    font-weight:bold;
-    color: #333;
+    font-weight: 700;
 }
+
+#form-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-item fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
 form label {
     display: block;
+    margin-bottom: 5px;
     font-weight: bold;
-    margin:0;
-    color: #555;
 }
-form input,
-form select {
+
+form input, form select, form button {
     width: 100%;
-    padding: 1rem;
-    margin-bottom: ;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    background: #f7f7f7;
     font-size: 1rem;
-    color: #333;
 }
-form input::placeholder,
-form select::placeholder {
-    color: rgba(0, 0, 0, 0.5);
-}
+
 form button {
-    width: 20%;
-    padding:1%;
-    background-color: #333;
+    background-color: #007BFF;
     color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
+    margin-left: 11rem;
+    width: 50%;
     border: none;
-    border-radius: 5px;
-    cursor:pointer;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 form button:hover {
-    background-color: #530a0a;
+    background-color: #0056b3;
 }
-form input:hover,
-form select:hover {
-    background-color: azure;
-}
-form label {
-    margin-bottom: ;
-    display: block;
-}
-fieldset {
 
-}
 #highlight {
-    color: rgb(52, 52, 153);
+    color: #007BFF;
+    font-weight: bold;
+}
 
+.form-click {
+    font-size: 0.9rem;
+    color: #555;
 }
-/**--H section---*/
-h2{
-    margin:0;
+
+#terms {
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: underline;
 }
-h4 {
-    font-size: medium;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
+
+/*--Sidebar Section--*/
+aside {
     padding: 20px;
-    background-color: #f9f9f9; /* Light background for contrast */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    width: 90%; /* Responsive width */
-    max-width: 600px; 
-}
-h6 {
-    color: #ddd;
-    padding: 0.5rem;
-}
-h3 {
-    text-align: left;
-    margin: 2rem;
-    font-family: monospace;
-    font-size: 20px;
-
+    background-color: #f4f4f9;
+    margin: 20px;
+    text-align: center;
+    border-radius: 8px;
 }
 
-/**-- Table section---*/
+aside h2 {
+    font-size: 1.5rem;
+    color: #007BFF;
+}
+.identifier {
+    justify-content: center;
+}
+/* Footer Styling */
+#footer-container {
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
 
+#footer-container a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#footer-container a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .nav-btn {
+        flex: 1 1 calc(50% - 10px);
+        text-align: center;
+    }
+
+    #form-container {
+        padding: 15px;
+    }
+
+    form input, form select, form button {
+        padding: 8px;
+    }
+
+    aside {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #form-container {
+        padding: 10px;
+    }
+
+    form input, form select, form button {
+        font-size: 0.9rem;
+    }
+}
+.copy {
+    text-align: center;
+}
