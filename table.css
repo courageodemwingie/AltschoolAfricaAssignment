@@ -1,0 +1,135 @@
+.table-box {
+    width: 80%;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+}
+
+.table-container {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-headers th {
+    background-color: rgb(143, 185, 185);
+    color: #1a1717;
+    padding: 1rem;    
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.grey-row {
+    background-color: #f2f2f2;
+}
+
+.white-row {
+    background-color: #ffffff;
+}
+.row-head {
+    background-color: #eafcf3;
+    font-weight: bold;
+    color: #101214;
+    text-align: left;
+    padding: 12px;
+    font-size: 1rem;
+    border-bottom: solid #ddd;
+    border-right: 1px solid #ddd;   
+}
+
+td {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    font-weight: 600;
+}
+
+tbody tr:hover {
+    background-color: #e0f7fa;
+    transition: background-color 0.3s ease-in-out;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .table-container {
+        font-size: 0.9rem;
+    }
+    .row-head {
+        font-size: 0.95rem;
+    }
+    td {
+        padding: 8px;
+    }
+}
+/*--sectioN---*/
+#Data-container {
+    background-color: #92f895; 
+}
+
+#product-container {
+    background-color: #e9c48c; 
+}
+
+#engineering-container {
+    background-color: #64b4f5; 
+}
+
+
+.box-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    section {
+        width: 95%;
+    }
+}
+
+/**--FOOTER SECTION--*/
+.copy {
+    text-align: center;
+}
+#footer-container {
+    padding: 15px;
+    margin:0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#footer-container a {
+    color:white;
+    font-size: 10px;
+    text-decoration: none;
+}
