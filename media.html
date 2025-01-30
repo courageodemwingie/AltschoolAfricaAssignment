@@ -1,117 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AltschooAfrica</title>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altschool Africa</title>
+    <link rel="stylesheet" href="./media.css" />
 </head>
-
 <body>
-    <header class="head-box">
-        <img src="./assets/image/AltSchool_Africa.png" class="logo-size" alt="Altschool Logo">
-        <nav class="nav-buttons">
-            <a href="http://127.0.0.1:5500/index.html" class="nav-btn">home</a>
-            <a href="http://127.0.0.1:5500/form.html" class="nav-btn">portal form</a>
-            <a href="http://127.0.0.1:5500/table.html" class="nav-btn">course Table</a>
-            <a href="http://127.0.0.1:5500/media.html" class="nav-btn">fun-corner</a>
-        </nav>
+     <header class="hero">
+      <h1>meet an altschooler</h1>
     </header>
     <main>
-        <article class="intro">
-            <h2>Meet an Altschooler</h2>
-            <p>
-                I’m Courage, an aspiring fullstack engineer with a strong passion for both tech and music. I love
-                immersing myself
-                into new projects, learning and pushing myself to improve my skills. I’m a dedicated
-                Liverpool FC fan, and I never miss a chance to cheer on my team. When I’m not working or watching
-                football, I enjoy reading books. I also have a keen interest in web3 and videography, exploring the
-                evolving tech landscape and capturing creative moments through video.</p>
-            <img src="./assets/image/car-portrait.jpg" alt="car-photo" width="100%" height="100%">
-        </article>
-        <hr>
-        <section>
-            <div class="image">
-                <h2>Motivation/Support</h2>
-                <p> Motivation is the driving force that keeps us moving toward our goals, no matter how challenging the
-                    path may seem. When we commit to daily learning, we create a cycle of curiosity and growth. However,
-                    motivation isn't something we have to find alone. The support we receive from our family and
-                    community is invaluable. At Altschool, the encouragement and guidance from mentors and peers provide
-                    a strong foundation that pushes us to strive for excellence. Likewise, the unwavering support of
-                    family reminds us of our purpose, offering both strength and reassurance during times of doubt.
-                    Together, these support systems help us stay grounded, inspired, and focused on our journey toward
-                    success.
-                </p>
-            </div>
-            <div class="image-container">
-                <picture>
-                    <source srcset="./assets/image/mama-love.PNG" media="(max-width: 600px)" type="image/png">
-                    <source srcset="./assets/image/mylittbaby.PNG" media="(max-width: 1200px)" type="image/png">
-                    <source srcset="./assets/image/puppylove.jpg" media="(min-width: 1201px)" type="image/png">
-                    <img src="./assets/image/sis-photo.PNG" alt="sisy">
-                </picture>
-            </div>
-            <br>
-            <hr>
-            <div class="audio-container">
-                <h2>What i'm currently listening to</h2>
-                <p>For many coders, music serves as a crucial tool for enhancing focus and productivity. Among the
-                    various genres that work well as background noise, house music stands out for its ability to create
-                    a rhythmically steady atmosphere that complements deep concentration without overwhelming the mind.
-                </p>
+        <section id="Big-container">
+            <div class="motivation-container">
+                <div class="box-header">
+                    <h2>Motivation & Support</h2>
+                </div>
                 <p>
-                    One of the reasons house music is such an excellent choice for coding is its consistent 4/4 beat,
-                    which provides a stable and predictable rhythm. This steady pace helps some coders enter a "flow"
-                    state, where they can immerse themselves fully in their work. Unlike music with abrupt changes or
-                    complex lyrics, house music’s repetitive, groovy beats allow for prolonged listening without causing
-                    distractions. The rhythmic pulse can keep you energized and focused for long coding sessions.
+                    Motivation is the driving force that keeps us moving toward our goals.
+                    However, support from family and community plays an important role. At
+                    Altschool, mentorship and peer support fuel our passion to grow.
                 </p>
-                <audio controls src="./assets/audio/shouse Tonight.mp3" type="audio/mpeg">
-                </audio>
-                <audio controls src="./assets/audio/juno beat.mp3" type="audio/mpeg">
+                <img src="./assets/image/mama-love.PNG" alt="Family Support" />
+            </div>
+            <div class="Audio-container">
+                <div class="box-header">
+                    <h2>What I'm Currently Listening To</h2>
+                </div>
+                <p>
+                    House music’s steady rhythm helps me focus while coding. Its groovy
+                    beats keep me energized for long sessions.
+                </p>
+                <audio controls>
+                    <source src="./assets/audio/shouse Tonight.mp3" type="audio/mp3" />
+                  </audio>
+                  <audio controls>
+                    <source src="./assets/audio/juno beat.mp3" type="audio/mp3" />
                 </audio>
             </div>
-            <br>
-            <hr>
-            <div class="video">
-                <h2>Here are two random videos on my Gallery...</h2>
-                <video src="assets/video/LFC.mp4" controls="" type="video/mp4">
+            <div class="Video-container">
+                <div class="box=header">
+                    <h2>Gallery: Random Clips</h2>
+                </div>
+                <video controls>
+                    <source src="./assets/video/LFC.mp4" type="video/mp4" />
+                 </video>
+                  <video controls>
+                    <source src="./assets/video/movie-video.mp4" type="video/mp4" />
                 </video>
-                <br>
-                <video src="./assets/video/movie-video.mp4" controls="" type="video/mp4"></video>
-                <hr>
-                <div>
-                    <h2>Check out my designs</h2>
-                    <img src="./assets/image/BUBBLES (3).png">
-                    <img src="./assets/image/BUBBLES.png">
+            </div>
+            <div class="design-container">
+                <div class="box-header">
+                    <h2>Check out some of Designs</h2>
                 </div>
-                <br>
-                <hr>
-                <div class="iframe">
-                    <div>
-                        <h2>Hear from Other Altschoolers!</h2>
-                    </div>
-                    <iframe src="https://www.youtube.com/embed/4r64jGYO8vQ?si=h9qMmGhPZxLBIWM9"
-                        title="Altschoolers Testimonial Video"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                 <img src="./assets/image/BUBBLES (3).png" alt="Design 1" />
+                 <img src="./assets/image/BUBBLES.png" alt="Design 2" />
+            </div>
+            <div class="testimonial">
+                <div class="box-header">
+                    <h2>Hear from Other Altschoolers!</h2>
                 </div>
-                <hr>
+                  <iframe src="https://www.youtube.com/embed/4r64jGYO8vQ" allowfullscreen></iframe>
+            </div>
         </section>
-    </main>
-    <footer id="footer-container">
-        <h6>Head office</h6>
-        <p class="footer-text">360) 793-0508
-            11610 Woods Lake Rd
-            Monroe, Washington(WA), 98272</p>
-        <h6>Abuja office</h6>
-        <p class="footer-text"> (580) 229-0886
-            1405 76th Hwy S
-            Healdton, Oklahoma(OK), 73438 </p>
-        <p><a href="#top">Back to top</a></p>
-        <p class="copy">&copy;2024 courage odemwingie &trade;. All rights reserved.</p>
+    </main> 
+    <footer>
+      <p><a href="#top">Back to top</a></p>
+      <p class="copy">&copy; 2024 Courage Odemwingie. All rights reserved.</p>
     </footer>
-</body>
-
+  </body>
 </html>
