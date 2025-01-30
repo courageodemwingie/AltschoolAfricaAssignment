@@ -1,122 +1,179 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #f0f8ff;
-    color: #333;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  background: #f5f7fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-header {
-    text-align: center;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c);
-    color: white;
-    padding: 20px;
-    border-radius: 15px;
-    width: 80%;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+.hero {
+  width: 100%;
+  background: linear-gradient(135deg, #5c6f99, #9899a3);
+  color: #fff;
+  text-align: center;
+  padding: 30px 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    width: 90%;
-    margin-top: 20px;
+.hero h1 {
+  font-size: 2.5rem;
+  animation: popIn 0.8s ease-out;
+}
+#Big-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
 }
 
-section {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
-    flex: 1 1 45%;
+.box-header {
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #fff;
 }
 
-.intro {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.motivation-container .box-header { 
+    background: #ff6b6b; 
+}
+.Audio-container .box-header { 
+    background: #6c5ce7; 
+}
+.Video-container .box-header { 
+    background: #00cec9; 
+}
+.design-container .box-header { 
+    background: #f39c12; 
+}
+.testimonial .box-header { 
+    background: #2ecc71; 
 }
 
-.intro img {
-    width: 80%;
-    max-width: 300px;
-    border-radius: 15px;
-    margin-top: 15px;
+.motivation-container,
+.Audio-container,
+.Video-container,
+.design-container,
+.testimonial {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-.motivation {
-    background: #ffdfdf;
-    text-align: center;
+.motivation-container:hover,
+.Audio-container:hover,
+.Video-container:hover,
+.design-container:hover,
+.testimonial:hover {
+  transform: translateY(-5px);
 }
 
-.image-gallery {
-    text-align: center;
-    background: #d6f5ff;
+img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.music {
-    background: #eaffd0;
-    text-align: center;
+img:hover {
+  transform: scale(1.05);
 }
 
-.music audio {
-    display: block;
-    margin: 10px auto;
+audio {
+  width: 100%;
+  margin-top: 10px;
 }
 
-.video-gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #ffe4b5;
+video {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
-.video-gallery video {
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
-    margin-top: 10px;
+iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
 }
 
-.design-showcase {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    background: #d4c0ff;
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background: #302f3a;
+  color: #fff;
+  width: 100%;
 }
 
-.design-showcase img {
-    width: 45%;
-    max-width: 250px;
-    border-radius: 10px;
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.testimonials {
-    text-align: center;
-    background: #ffc0cb;
-    padding: 20px;
-    border-radius: 15px;
-    width: 80%;
-    margin-top: 20px;
+footer a:hover {
+  text-decoration: underline;
 }
 
-testimonials iframe {
-    width: 80%;
-    height: 300px;
-    border-radius: 10px;
+
+@media (max-width: 1024px) {
+  #Big-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  iframe {
+    height: 250px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  iframe {
+    height: 200px;
+  }
+}
+
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
