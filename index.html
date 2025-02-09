@@ -4,23 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Altschool Assignment</title>
+    <style>
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.bg-ctn {
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.track-header {
+    font-size: 1.8rem;
+    color: #2C3E50;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Assignment Links Container */
+.link-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px; /* Adds space between items */
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    padding: 20px;
+}
+
+/* Assignment Buttons */
+.list-ctn {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.list-ctn li {
+    flex: 1;
+}
+
+/* Assignment Links */
+.click {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 80px;
+    background: #2EC4B6;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.click:hover {
+    background: #1da598;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .link-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-ctn {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .click {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
+
+
+    </style>
 </head>
 <body>
     <div><h1> Courage Odemwingie</h1>
         <h2> ALT/SOE/024/4978</h2>
-        <p>Check out my HTML Assignment 1 & 2</p>
+        <p>Click the links below out my HTML Assignment </p>
     </div>
-
     <div>
-        <div class="learning-track">
-            <div class="track-container">
+        <div class="bg-ctn">
+            <div class="track-ctn">
                 <h3 class="track-header">Clink on the link below...</h3>
             </div>
-            <div class="learning-track-items">
-                <a href="bio.html" class="learning-item">Bio</a>
-                <a href="./form.html" class="learning-item html">Altschool Portal</a>
-                <a href="./table.html" class="learning-item css">Course Table</a>
-                <a href="./media.html" class="learning-item javascript">Media.html</a>
+            <div class="link-box">
+                <div class="list-ctn">
+                        <li>
+                            <a class="click" href="/Assignment 1/bio.html" target="_blank">Assignment 1</a>
+                           
+                        </li>
+                        <li>
+                            <a class="click" href="/Assignment 1/form.html" target="_blank">Assignment 2</a>
+                     
+                        </li>
+                        <li>
+                            <a class="click" href="/Assignment 2/table.html" target="_blank">Assignment 3</a>
+                         
+                        </li>
+                        <li>
+                            <a class="click" href="/Assignment 2/media.html" target="_blank">Assignment 4</a>
+                         
+                        </li>
+                </div> 
             </div>
         </div>
     </div>
