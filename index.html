@@ -16,7 +16,11 @@ body {
     padding: 0;
 }
 
-/* Container Styling */
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
 .bg-ctn {
     max-width: 90%;
     margin: 40px auto;
@@ -26,7 +30,7 @@ body {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Header Section */
+
 .track-header {
     font-size: 1.8rem;
     color: #2C3E50;
@@ -34,17 +38,17 @@ body {
     font-weight: 600;
 }
 
-/* Assignment Links Container */
+
 .link-box {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 20px; /* Adds space between items */
-    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    gap: 20px; 
+    flex-wrap: wrap; 
     padding: 20px;
 }
 
-/* Assignment Buttons */
+
 .list-ctn {
     list-style: none;
     padding: 0;
@@ -56,7 +60,7 @@ body {
     flex: 1;
 }
 
-/* Assignment Links */
+
 .click {
     display: flex;
     align-items: center;
@@ -80,7 +84,6 @@ body {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .link-box {
         flex-direction: column;
@@ -93,7 +96,7 @@ body {
     }
 
     .click {
-        width: 90%; /* Full width on smaller screens */
+        width: 90%;
     }
 }
 
@@ -102,13 +105,13 @@ body {
 </head>
 <body>
     <div><h1> Courage Odemwingie</h1>
+        <br>
         <h2> ALT/SOE/024/4978</h2>
-        <p>Click the links below out my HTML Assignment </p>
     </div>
     <div>
         <div class="bg-ctn">
             <div class="track-ctn">
-                <h3 class="track-header">Clink on the link below...</h3>
+                <h3 class="track-header">Click on the link below...</h3>
             </div>
             <div class="link-box">
                 <div class="list-ctn">
